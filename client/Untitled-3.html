@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>Profile</title>
+</head>
+<body>
+<script>
+	function listThread(){
+                $.post("cont.php",
+                        function (data) {
+                              var data = JSON.parse(data);     
+							var thrad = "";
+                            for (var i = 0; (i < data.length); i++)
+                            {
+								var thrid = data[i]['thr_id']
+								thrad = "<tr>"+"<td>"+data[i]['cat_name']+"</td>"+"<td>"+data[i]['thr_content']+"</td><td>"+data[i]['date_created']+"</td><td><button onClick='call1("+thrid+")'>Remove</button></td></tr>";
+								$("#output").append(thrad);
+                            }
+                        });
+            }
+	function call1(thrid){
+		$.ajax({
+		url: "thread-delete.php",
+		method: "post",
+    data: {thrid:thrid},
+		success: function(response) {
+			var result = eval('(' + response + ')');
+			if(response){
+				 var result = eval('(' + response + ')');
+                        if (response)
+                        {
+							alert("thread deleted");
+							location.reload();
+						}
+				else {
+					alert("thread is NOT deteled");
+					location.reload();
+				}
+			}
+		},
+		error: function(data) {
+			console.log(data);
+		}
+
+	});
+	}
+</script>
+<table id="output">
+</table>
+</body>
+</html>

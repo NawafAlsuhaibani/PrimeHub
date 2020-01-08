@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* CSS Document */
+ body {
+     background-color: dimgray;
+     margin:0;
+	 color:antiquewhite;
+	 font-family: Tahoma, Helvetica, sans-serif;
+}
+ .flex-container {
+     display: flex;
+     flex-direction: row;
+     min-height: 50vh;
+	 min-width: 10vh;
+     margin: 100px 10px 30px 10px;
+}
+ .signup {
+     margin: 100px 10px 30px 10px;
+}
+ .login {
+     margin: 100px 10px 30px 10px;
+}
+ .passrec {
+	      flex: 1;
+     padding: 10px;
+     background-color: #333;
+     margin: 100px 10px 30px 10px;
+}
+ #content {
+     flex: 1;
+     padding: 10px;
+     margin-right: 10px;
+	 background-color: #333;
+	 border-radius: 8px;
+}
+ #content-1 {
+     flex: 1;
+     padding: 10px;
+	 background-color: #333;
+	 border-radius: 8px;
+}
+ #ad {
+	 flex: 0 0 150px;
+     background-color: #333;
+     padding: 5px;
+     margin-left: 10px;
+	 border-radius: 8px;
+	 
+}
+ #ad1 {
+	 flex: 0 0 250px;
+     background-color: #333;
+     padding: 5px;
+     margin-right: 10px;
+	 border-radius: 8px;
+	 
+}
+#fixednav {
+		overflow: hidden;
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		background-color: #333;
+		opacity: 0.85;
+		height: 54px;
+}
+.leftside
+{
+	text-decoration: none;
+	font-size: 1.5em;
+	float: left;
+	margin: 10px;
+	color: antiquewhite;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+.leftsidebar
+{
+	text-decoration: none;
+	font-size: 1.5em;
+	float: left;
+	margin: 10px;
+	color: #333;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+#fixednav a:hover
+{
+	background-color: antiquewhite;
+	color: #333;
+}
+#fixednav:hover
+{
+	opacity: 1.0;
+}
+.rightside
+{
+	text-decoration: none;
+	font-size: 1.5em;
+	float: right;
+	margin: 10px;
+	color: antiquewhite;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#regform {
+	background-color: #333;
+	margin: 2em auto 0 auto;
+}
+#regform1 {
+	background-color: #333;
+	margin: 2em auto 0 auto;
+}
+#regform2 {
+	background-color: #333;
+	margin: 2em auto 0 auto;
+}
+.inp {
+margin-top: 5px;
+}
+
+table {
+	width: 100%
+}
+tr {
+	/*outline: thin solid;*/
+}
+.cat {
+	font-size: 1.5em;
+	border-bottom: 2px solid #C3C3C3;
+	color: #C3C3C3;
+	padding-bottom: 5px;
+}
+.thr  {
+	font-size: 1.2em;
+}
+.thr a {
+	color: antiquewhite;
+	text-decoration: none;
+}
+.thr a:hover {
+	background-color: antiquewhite;
+	color: #333;
+}
+.info {
+	display: block;
+	font-size: 0.89em;
+	color: #9C9C9C;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.newcat * {
+	margin: 0;
+}
+.empty {
+	background-color: darkred;
+}
+.nonempty {
+	background-color: white;
+}
+footer {
+     overflow: hidden;
+     padding: 10px;
+     background-color: #333;
+	height: 100px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 8px;
+	
+}
+.advertisemen {
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+.advertisemen:link {
+	color: antiquewhite;
+}
+.advertisemen:visited {
+	color: antiquewhite;
+}
+.advertisemen:hover {
+	background-color: antiquewhite;
+	color: #333;
+}
+.spacer 
+{
+	height: 10px;
+}
+#thread {
+	overflow: hidden;
+	border-bottom: 2px dashed antiquewhite;
+}
+.comment p {
+	margin-bottom: 0px;
+}
+#textarea {
+	width: 50%;
+}
+.comm {
+	margin: 0 0 5px;
+	padding-bottom: 5px;
+	font-size: 70%;
+	border-bottom: 1px solid antiquewhite;
+}
+a {
+	color: antiquewhite;
+	text-decoration: none;
+}
+.tablelink:hover {
+	color: #333333;
+	background-color: antiquewhite;
+}
+#content a:hover h3 {
+	color: #333333;
+	background-color: antiquewhite;
+}
+.mytext {
+    width: 300px;
+}
+.userinfo:hover {
+	background-color: antiquewhite;
+	color: #333
+}
+.userthr:hover{
+	background-color: antiquewhite;
+	color: #333;
+}
+#output1 td, #output1 th {
+    border: 1px solid #ddd;
+}
+#output1 tr:nth-child(even){
+background-color: antiquewhite;
+color : #333
+}
+
+#output1 tr:hover {
+background-color: #ddd;
+color : black;
+}
+
+#output1 th {
+    background-color: #4c82af;
+    color: white;
+}
